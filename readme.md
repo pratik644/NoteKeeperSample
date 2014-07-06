@@ -133,10 +133,10 @@ if(isNew == false) {
 
 This demonstrates how you can use the existing Appacitive-iOS-SDK written in Objective-C in your swift app.
 
-<img alt="ss" href="http://devcenter.appacitive.com/ios/samples/notekeeper/sss1.png" style="width:40%; padding: 10%; float:left;" />
+<img alt="screenshot" src="http://devcenter.appacitive.com/ios/samples/notekeeper/sss1.png" style="width:25%; padding: 1%; float:left;">
 
-<img alt="ss" href="http://devcenter.appacitive.com/ios/samples/notekeeper/sss2.png" style="width:40%; padding: 10%; float:left;" />
+<img alt="screenshot" src="http://devcenter.appacitive.com/ios/samples/notekeeper/sss2.png" style="width:25%; padding: 1%; float:left;">
 
-<img alt="ss" href="http://devcenter.appacitive.com/ios/samples/notekeeper/sss3.png" style="width:40%; padding: 10%; float:left" />
+<img alt="screenshot" src="http://devcenter.appacitive.com/ios/samples/notekeeper/sss3.png" style="width:25%; padding: 1%; float:left">
 
-<img alt="ss" href="http://devcenter.appacitive.com/ios/samples/notekeeper/sss4.png" style="width:40%; padding: 10%;" />
+<img alt="screenshot" src="http://devcenter.appacitive.com/ios/samples/notekeeper/sss4.png" style="width:25%; padding: 1%;">
