@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="NoteKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2aJ-6I-qk3">
+                                <rect key="frame" x="84" y="28" width="153" height="81"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-W9-e7Y">
+                                <rect key="frame" x="43" y="135" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.88991802930831909" green="0.69255959987640381" blue="0.47154915332794189" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-xe-MH5">
+                                <rect key="frame" x="43" y="185" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.88991802930831909" green="0.69255959987640381" blue="0.47154915332794189" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMl-s8-wyR">
+                                <rect key="frame" x="49" y="225" width="76" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Olw-YV-M66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-LR-Jas">
+                                <rect key="frame" x="217" y="225" width="55" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iYm-3H-h1O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailField" destination="QfX-W9-e7Y" id="mE2-Oj-nHY"/>
+                        <outlet property="passwordField" destination="0yY-xe-MH5" id="LmB-4P-Opn"/>
+                        <segue destination="EqZ-AA-Okw" kind="presentation" identifier="showList" id="hbT-at-1I2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="-480"/>
+        </scene>
+        <!--Notes List Table View Controller-->
+        <scene sceneID="DHb-fk-PX3">
+            <objects>
+                <viewController id="EqZ-AA-Okw" customClass="NotesListTableViewController" customModule="NoteKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GbI-ms-tcC"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3J-pD-z31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VaR-PE-mg3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-Rx-Esk">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Logout" id="pH0-0b-luM">
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="EqZ-AA-Okw" id="7ZN-2I-P7b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jIT-AL-YeC"/>
+                                    <barButtonItem title="New Note" id="TmZ-pU-9YT">
+                                        <connections>
+                                            <action selector="newNoteButtonTapped:" destination="EqZ-AA-Okw" id="IQF-pT-NtP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDN-xJ-GzM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.41834866999999998" green="0.15314306320000001" blue="0.0066396584729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" red="1" green="0.27600858430000003" blue="0.1109018641" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Notes" id="ws6-6K-F2Z"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-Il-THz">
+                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                                <color key="backgroundColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" red="0.41834866999999998" green="0.15314306320000001" blue="0.0066396584729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="JfK-SV-ySg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JfK-SV-ySg" id="xgr-e9-4M7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EqZ-AA-Okw" id="yyU-eQ-DOg"/>
+                                    <outlet property="delegate" destination="EqZ-AA-Okw" id="z2o-KS-nwm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="Irj-Il-THz" id="dll-sg-8ir"/>
+                        <segue destination="NIN-Nl-msR" kind="presentation" identifier="showNote" id="6jl-Ho-uFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBD-q5-xpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="-480"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="cpu-iR-8HO">
+            <objects>
+                <viewController id="NIN-Nl-msR" customClass="NoteViewController" customModule="NoteKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QrU-rq-MEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Q9-Eu-024"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZX-7A-hoP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-dA-oEg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="41"/>
+                                <color key="backgroundColor" red="0.77774918079376221" green="0.60674870014190674" blue="0.47673448920249939" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NIN-Nl-msR" id="oDx-ZD-oAd"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note goes here..." translatesAutoresizingMaskIntoConstraints="NO" id="fBd-C0-bEy">
+                                <rect key="frame" x="20" y="69" width="280" height="455"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.41834867000579834" green="0.15314306318759918" blue="0.0066396584734320641" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NIN-Nl-msR" id="hII-Dc-OWU"/>
+                                </connections>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-3Z-lt2">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="Zih-Gd-qTk">
+                                        <connections>
+                                            <action selector="cancelbuttonTapped" destination="NIN-Nl-msR" id="xoH-iw-p1h"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="074-j0-HEh"/>
+                                    <barButtonItem title="Save" id="EmQ-JE-YXC">
+                                        <connections>
+                                            <action selector="savebuttonTapped" destination="NIN-Nl-msR" id="ICv-m2-SBV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="0.99759954210000001" blue="0.85926860569999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.57518607379999998" green="0.36614599819999999" blue="0.1213827953" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99759954214096069" blue="0.85926860570907593" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="noteTextView" destination="fBd-C0-bEy" id="Kas-yI-wm0"/>
+                        <outlet property="noteTitleField" destination="gIx-dA-oEg" id="A7N-lI-fw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ID-Ve-1OT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365" y="-480"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="168" height="91"/>
+    </resources>
+</document>
